@@ -35,14 +35,14 @@ export default function HeroSection() {
             <div className="flex items-center">🔒 Top-tier Security</div>
           </div>
         </div>
-        {/* Right: Phone/dashboard mockup */}
-        <div className="flex-1 flex justify-center">
+        {/* Right: Phone/dashboard mockup - hidden on mobile, visible on md screens and up */}
+        <div className="hidden md:block flex-1">
           <Image
             src="/herosectionimage.png"
             alt="App dashboard mockup"
             width={500}
             height={400}
-            className="w-full max-w-md h-auto rounded-xl shadow-xl"
+            className="w-full h-full object-cover rounded-xl"
             priority
           />
         </div>
